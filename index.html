@@ -6,47 +6,63 @@
     <title>Southern California Surf Company</title>
     <style>
         body {
-            background-color: #87CEEB; /* Light blue reminiscent of the ocean */
+            background-color: #bde4f6; /* Light blue reminiscent of the ocean */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-        /* Add more CSS styles for the header, buttons, images, etc. */
+        header {
+            background-color: #f9a825; /* Bright yellow for a sunny beach feel */
+            padding: 10px;
+            text-align: center;
+        }
+        .product {
+            display: inline-block;
+            margin: 10px;
+        }
+        footer {
+            background-color: #f9a825; /* Same color as header */
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
     </style>
-    <script>
-        // Add JavaScript code for functionality if needed
-    </script>
 </head>
 <body>
     <header>
         <h1>Southern California Surf Company</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <button>Home</button>
+        <button>Products</button>
+        <button>Contact</button>
     </header>
-    <main>
-        <section>
-            <h2>Featured Products</h2>
-            <!-- Add images and descriptions of the products here -->
-        </section>
-        <section>
-            <h2>About Us</h2>
-            <p>Insert text blocks with information about the company here.</p>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <form>
-                <!-- Add form fields for contacting the company -->
-            </form>
-        </section>
-    </main>
+    <div class="product">
+        <img src="surfboard1.jpg" alt="Surfboard 1">
+        <p>Description of Surfboard 1</p>
+    </div>
+    <div class="product">
+        <img src="surfboard2.jpg" alt="Surfboard 2">
+        <p>Description of Surfboard 2</p>
+    </div>
+    <div class="product">
+        <img src="surfboard3.jpg" alt="Surfboard 3">
+        <p>Description of Surfboard 3</p>
+    </div>
+    <h2>About Us</h2>
+    <p>Text block with information about the surf company.</p>
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
     <footer>
-        <p>&copy; 2023 Southern California Surf Company</p>
+        &copy; 2023 Southern California Surf Company
     </footer>
 </body>
 </html>
